@@ -1,0 +1,20 @@
+{
+    "name": "nystron",
+    "version": "1.0.0",
+    "repository": "https://github.com/DinosDev/Nystron.git",
+    "author": "DinosDev <erick@bilhalba.com.br>",
+    "license": "MIT",
+    "scripts": {
+        "commit": "git add . && cz"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog",
+            "disableScopeLowerCase": true,
+            "disableSubjectLowerCase": true
+        }
+    },
+    "dependencies": {
+        "cz-conventional-changelog": "^3.3.0"
+    }
+}
