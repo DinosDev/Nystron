@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import Logo from "./Logo"
+import Nav from "./Nav"
 
 const HeaderContainer = styled.header`
     display: flex;
@@ -25,6 +26,7 @@ export default function Header() {
     return (
         <HeaderContainer>
             <Logo />
+            <Nav />
         </HeaderContainer>
     )
 }
