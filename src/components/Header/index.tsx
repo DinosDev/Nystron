@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Logo from "./Logo"
 
 const HeaderContainer = styled.header`
     display: flex;
@@ -22,6 +23,8 @@ const HeaderContainer = styled.header`
 
 export default function Header() {
     return (
-        <HeaderContainer> </HeaderContainer>
+        <HeaderContainer>
+            <Logo />
+        </HeaderContainer>
     )
 }
