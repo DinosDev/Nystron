@@ -1,0 +1,8 @@
+{
+    "Preconnect": {
+        "GoogleApis": "https://fonts.googleapis.com",
+        "GStatic": "https://fonts.gstatic.com"
+    },
+    "Link": "https://fonts.googleapis.com/css2?family=Maven+Pro",
+    "FontFamily": "Maven Pro"
+}
