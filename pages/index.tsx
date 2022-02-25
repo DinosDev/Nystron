@@ -1,3 +1,10 @@
+import React from "react"
+import Header from "../src/components/Header"
+
 export default function IndexPage() {
-    return (<div>Nystron</div>)
+    return (
+        <React.Fragment>
+            <Header />
+        </React.Fragment>
+    )
 }
