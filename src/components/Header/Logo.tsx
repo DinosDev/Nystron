@@ -1,7 +1,11 @@
 import Link from "next/link"
 import styled from "styled-components"
 
-const LogoContainer = styled.div``
+const LogoContainer = styled.div`
+    @media (max-width: 830px) {
+        margin-bottom: 20px;
+    }
+`
 
 const ImgLink = styled.a`
     text-decoration: none;
