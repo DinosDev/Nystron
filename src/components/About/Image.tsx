@@ -2,6 +2,10 @@ import styled from "styled-components"
 
 const ImageContainer = styled.div`
     width: 45%;
+
+    @media (max-width: 768px) {
+        width: 93%;
+    }
 `
 
 const Img = styled.img`

@@ -8,7 +8,7 @@ const SolarContainer = styled.div`
 
 export default function Solar() {
     return (
-        <SolarContainer>
+        <SolarContainer id="Solar">
             <Title>Nystron Solar</Title>
             <Text />
         </SolarContainer>

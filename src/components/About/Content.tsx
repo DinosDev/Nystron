@@ -4,6 +4,10 @@ import MiniTitle from "./MiniTitle"
 const ContentContainer = styled.div`
     text-align: center;
     width: 45%;
+
+    @media (max-width: 768px) {
+        width: 93%;
+    }
 `
 
 const Text = styled.p``
