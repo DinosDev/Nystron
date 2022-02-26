@@ -8,6 +8,10 @@ const TextContainer = styled.div`
 
     * {
         text-align: center;
+
+        @media (max-width: 768px) {
+            margin-bottom: 10px;
+        }
     }
 `;
 
