@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Title from "./Title";
 
 const SolarContainer = styled.div`
     text-align: center;
@@ -6,6 +7,9 @@ const SolarContainer = styled.div`
 
 export default function Solar() {
     return (
-        <SolarContainer></SolarContainer>
+        <SolarContainer>
+            <Title>Nystron Solar</Title>
+
+        </SolarContainer>
     );
 }
