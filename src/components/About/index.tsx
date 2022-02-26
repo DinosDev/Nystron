@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Content from "./Content"
 import Image from "./Image"
 
 const AboutContainer = styled.div`
@@ -18,6 +19,7 @@ export default function About() {
     return (
         <AboutContainer>
             <Image />
+            <Content />
         </AboutContainer>
     )
 }
