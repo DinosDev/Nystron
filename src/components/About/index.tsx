@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Image from "./Image"
 
 const AboutContainer = styled.div`
     width: 100%;
@@ -16,6 +17,7 @@ const AboutContainer = styled.div`
 export default function About() {
     return (
         <AboutContainer>
+            <Image />
         </AboutContainer>
     )
 }
