@@ -17,7 +17,7 @@ const AboutContainer = styled.div`
 
 export default function About() {
     return (
-        <AboutContainer>
+        <AboutContainer id="Sobre">
             <Image />
             <Content />
         </AboutContainer>
