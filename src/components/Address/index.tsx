@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Title from "./Title"
 
 const AddressContainer = styled.div`
     display: flex;
@@ -7,9 +8,10 @@ const AddressContainer = styled.div`
     flex-flow: row wrap;
 `
 
-
 export default function Address() {
     return (
-        <AddressContainer></AddressContainer>
+        <AddressContainer>
+            <Title>Nosso Endereço</Title>
+        </AddressContainer>
     )
 }
