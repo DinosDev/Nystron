@@ -1,7 +1,11 @@
 import { Number, Mail } from "./ContactSolar.json"
 import styled from "styled-components"
 
-const ContactContainer = styled.div``
+const ContactContainer = styled.div`
+    * {
+        display: block;
+    }
+`
 
 export default function Contact() {
     return (
