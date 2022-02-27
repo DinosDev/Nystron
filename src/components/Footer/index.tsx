@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import About from "./About";
 
 const FooterContainer = styled.footer`
     background-color: black;
@@ -27,6 +28,7 @@ const FooterContainer = styled.footer`
 export default function Footer() {
     return (
         <FooterContainer>
+            <About />
         </FooterContainer>
     )
 }
