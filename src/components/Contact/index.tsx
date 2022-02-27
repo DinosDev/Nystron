@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Title from "./Title"
 
 const ContactContainer = styled.div`
     text-align: center;
@@ -17,6 +18,8 @@ const ContactContainer = styled.div`
 
 export default function Contact() {
     return (
-        <ContactContainer id="Contato"></ContactContainer >
+        <ContactContainer id="Contato">
+            <Title>Contato</Title>
+        </ContactContainer >
     )
 }
