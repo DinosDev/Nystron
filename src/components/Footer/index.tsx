@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import About from "./About";
 import Contact from "./Contact"
+import Hours from "./Hours";
 
 const FooterContainer = styled.footer`
     background-color: black;
@@ -31,6 +32,7 @@ export default function Footer() {
         <FooterContainer>
             <About />
             <Contact />
+            <Hours />
         </FooterContainer>
     )
 }
