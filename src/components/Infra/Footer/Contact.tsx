@@ -1,4 +1,4 @@
-import { Number, Mail } from "../Contact/Contact.json"
+import { Number, Mail } from "../../IndexPage/Contact/Contact.json"
 import styled from "styled-components";
 
 const ContactContainer = styled.div``
