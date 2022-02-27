@@ -3,6 +3,7 @@ import Header from "../src/components/Header"
 import About from "../src/components/About"
 import Address from "../src/components/Address"
 import Solar from "../src/components/Solar"
+import Contact from "../src/components/Contact"
 
 export default function IndexPage() {
     return (
@@ -11,6 +12,7 @@ export default function IndexPage() {
             <About />
             <Address />
             <Solar />
+            <Contact />
         </React.Fragment>
     )
 }
