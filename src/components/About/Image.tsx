@@ -16,7 +16,7 @@ const Img = styled.img`
 export default function Image() {
     return (
         <ImageContainer>
-            <Img src="https://cdn.pixabay.com/photo/2018/09/25/23/40/cranes-3703469_960_720.jpg" alt="Guindaste" />
+            <Img src="/images/Banner.jpg" alt="Nystron Banner" />
         </ImageContainer>
     )
 }

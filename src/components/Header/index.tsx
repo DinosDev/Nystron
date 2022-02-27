@@ -8,7 +8,7 @@ const HeaderContainer = styled.header`
     justify-content: space-around;
     padding: 10px;
     border-bottom: 1px solid black;
-    background-color: #d1812f;
+    background-color: #e67817   ;
 
     * {
         color: #00548b;
