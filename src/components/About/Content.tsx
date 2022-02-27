@@ -16,7 +16,11 @@ export default function Content() {
     return (
         <ContentContainer>
             <MiniTitle />
-            <Text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, debitis. Amet sequi deserunt ducimus harum vel, soluta dolor neque dolore ipsum illum eius laboriosam eum adipisci iure fugiat cum tempora.</Text>
+            <Text>
+                A Madeireira Nystron foi fundada em 29 de dezembro de 1978 pelo empresário Jaime Canuto Nystron. Nestes mais de 40 anos, a Nystron tornou-se uma das maiores empresas de materiais de construção da região oeste do Rio Grande Do Sul.
+                <br />
+                Por último, a Nystron vem abrindo áreas como a divisão Nystron Solar, que fornece e instala soluções de eficiência energética com geração solar Ongrid e Offgrid.
+            </Text>
         </ContentContainer>
     )
 }
