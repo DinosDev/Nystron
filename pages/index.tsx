@@ -4,6 +4,7 @@ import About from "../src/components/About"
 import Address from "../src/components/Address"
 import Solar from "../src/components/Solar"
 import Contact from "../src/components/Contact"
+import Footer from "../src/components/Footer"
 
 export default function IndexPage() {
     return (
@@ -13,6 +14,7 @@ export default function IndexPage() {
             <Address />
             <Solar />
             <Contact />
+            <Footer />
         </React.Fragment>
     )
 }
