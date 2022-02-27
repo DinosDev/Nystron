@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Title from "./Title";
+import Title from "../../Infra/Title"
 import Text from "./Text";
 
 const SolarContainer = styled.div`

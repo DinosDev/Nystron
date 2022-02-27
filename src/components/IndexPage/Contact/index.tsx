@@ -1,6 +1,6 @@
 import { Number, WhatsApp, Mail } from "./Contact.json"
 import styled from "styled-components"
-import Title from "./Title"
+import Title from "../../Infra/Title"
 
 const ContactContainer = styled.div`
     text-align: center;
