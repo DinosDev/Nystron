@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import About from "./About";
+import Contact from "./Contact"
 
 const FooterContainer = styled.footer`
     background-color: black;
@@ -29,6 +30,7 @@ export default function Footer() {
     return (
         <FooterContainer>
             <About />
+            <Contact />
         </FooterContainer>
     )
 }
