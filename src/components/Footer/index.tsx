@@ -3,6 +3,7 @@ import About from "./About";
 import Contact from "./Contact"
 import Hours from "./Hours";
 import SocialMedia from "./SocialMedia";
+import Credits from "./Credits";
 
 const FooterContainer = styled.footer`
     background-color: black;
@@ -35,6 +36,7 @@ export default function Footer() {
             <Contact />
             <Hours />
             <SocialMedia />
+            <Credits />
         </FooterContainer>
     )
 }
