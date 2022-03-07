@@ -6,7 +6,8 @@
     "license": "MIT",
     "scripts": {
         "commit": "git add . && cz",
-        "dev": "cd FrontEnd && next dev"
+        "front": "cd FrontEnd && yarn dev",
+        "back": "cd BackEnd && php -S localhost:8000 -t public"
     },
     "config": {
         "commitizen": {
