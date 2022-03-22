@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+
 class MessageController extends Controller
 {
-    public function store()
+    public function store(Request $request)
     {
-        //Store The Data
-        return response()->json(['text' => 'Hello World']);
+        $data = $request->only("name", "lastName", "telephone", "email", "message");
+
+        return $data;
     }
 }
