@@ -1,9 +1,20 @@
 <?php
 
-use Laravel\Lumen\Routing\Router;
+use Illuminate\Support\Facades\Route;
 
-/** @var Router $router */
+use App\Http\Controllers\MessageController;
 
-$router->group(['prefix' => 'api/v1'], function () use ($router) {
-    $router->post('/message', "MessageController@store");
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Route::group(['prefix' => 'api/v1'], function () {
+    Route::post('/message', [MessageController::class, "store"]);
 });
