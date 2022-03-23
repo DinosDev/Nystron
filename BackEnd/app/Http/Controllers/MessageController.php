@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\MessageModel;
 use Illuminate\Http\Request;
 
 class MessageController extends Controller
@@ -16,6 +17,8 @@ class MessageController extends Controller
             "message" => ["required", "max:1000"]
         ]);
 
-        return $data;
+        $response = MessageModel::create($data);
+
+        return $response;
     }
 }
