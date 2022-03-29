@@ -2,23 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Http\Requests\MessageRequest;
 use App\Models\MessageModel;
 
 class MessageController extends Controller
 {
-    public function store(Request $request)
+    public function store(MessageRequest $request)
     {
-        $data = $request->validate([
-            "name" => ["required", "max:50"],
-            "lastName" => ["required", "max:100"],
-            "telephone" => ["required", "max:21", 'regex:#^\+([0-9]{2,3})((\s\([0-9]{2}\)\s)|(\s))([0-9]{4,5})\s-\s([0-9]{4})$#'],
-            "email" => ["required", "max:100", "email"],
-            "message" => ["required", "max:1000"]
-        ]);
+        $RequestValues = $request->only(['name', 'lastName', 'telephone', 'email', 'message']);
 
-        $response = MessageModel::create($data);
-
-        return $response;
+        return MessageModel::createValue($RequestValues);
     }
 }
