@@ -1,6 +1,7 @@
 import ContactMain from "./Contact.js"
 import styled from "styled-components"
 import Title from "../../Infra/Title"
+import Form from "./Form"
 
 const ContactContainer = styled.div`
     text-align: center;
@@ -22,6 +23,7 @@ export default function Contact() {
         <ContactContainer id="Contato">
             <Title>Contato</Title>
 
+            <p>Você pode Entrar em Contato Com A Nossa Equipe Por Telefone, Email Ou Preencha O Formulário Abaixo.</p>
             <a href={ContactMain.Number.Href}>Telefone: {ContactMain.Number.Text}</a>
             <a href={ContactMain.WhatsApp.Href}>WhatsApp: {ContactMain.WhatsApp.Text}</a>
             <a href={ContactMain.Mail.Href}>Email: {ContactMain.Mail.Text}</a>
