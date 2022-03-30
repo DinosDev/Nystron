@@ -2,8 +2,8 @@ const Errors = [
     {
         Title: "Name",
         Text: {
-            MinLength: "Name must be at least 3 characters long",
-            MaxLength: "Name must be less than 50 characters long"
+            MinLength: "O Nome precisa de no mínimo 3 caracteres",
+            MaxLength: "O Nome precisa de no máximo 50 caracteres"
         },
         Validation: {
             MinLength: 3,
@@ -12,8 +12,8 @@ const Errors = [
     }, {
         Title: "LastName",
         Text: {
-            MinLength: "LastName must be at least 5 characters long",
-            MaxLength: "LastName must be less than 100 characters long"
+            MinLength: "O Sobrenome precisa de no mínimo 5 caracteres",
+            MaxLength: "O Sobrenome precisa de no máximo 100 caracteres"
         },
         Validation: {
             MinLength: 5,
@@ -22,9 +22,9 @@ const Errors = [
     }, {
         Title: "Telephone",
         Text: {
-            MinLength: "Telephone must be at least 17 characters long",
-            MaxLength: "Telephone must be less than 21 characters long",
-            Format: "Telephone must be in format +55 (55) 91234 - 5678 Or +598 91234 - 5678"
+            MinLength: "O Telefone deve manter os seguintes formatos: +xx (xx) xxxxx - xxxx ou +xxx xxxxx - xxxx",
+            MaxLength: "O Telefone deve manter os seguintes formatos: +xx (xx) xxxxx - xxxx ou +xxx xxxxx - xxxx",
+            Format: "O Telefone deve manter os seguintes formatos: +xx (xx) xxxxx - xxxx ou +xxx xxxxx - xxxx"
         },
         Validation: {
             MinLength: 17,
@@ -34,8 +34,8 @@ const Errors = [
     }, {
         Title: "Email",
         Text: {
-            MinLength: "Email must be at least 7 characters long",
-            MaxLength: "Email must be less than 100 characters long"
+            MinLength: "O Email precisa de no mínimo 3 caracteres",
+            MaxLength: "O Email precisa de no máximo 100 caracteres"
         },
         Validation: {
             MinLength: 3,
@@ -44,8 +44,8 @@ const Errors = [
     }, {
         Title: "Message",
         Text: {
-            MinLength: "Message must be at least 10 characters long",
-            MaxLength: "Message must be less than 1000 characters long"
+            MinLength: "A Mensagem precisa de no mínimo 3 caracteres",
+            MaxLength: "A Mensagem precisa de no máximo 1000 caracteres"
         },
         Validation: {
             MinLength: 3,
