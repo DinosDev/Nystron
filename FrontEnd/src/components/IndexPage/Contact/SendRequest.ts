@@ -14,7 +14,7 @@ export default async function SendRequest(event: any) {
   const Validation = ValidateInputs(values)
 
   if (Validation === true) {
-    const API_URL = "http://localhost:8000/"
+    const API_URL = "https://nystron.herokuapp.com/"
 
     const res = await fetch(`${API_URL}api/v1/message`, {
       body: JSON.stringify(values),
