@@ -1,4 +1,4 @@
-import { Number, WhatsApp, Mail } from "./Contact.json"
+import ContactMain from "./Contact.js"
 import styled from "styled-components"
 import Title from "../../Infra/Title"
 
@@ -22,10 +22,11 @@ export default function Contact() {
         <ContactContainer id="Contato">
             <Title>Contato</Title>
 
-            <p>Você pode Entrar em Contato Com A Nossa Equipe Por Telefone ou Email.</p>
-            <a href={Number.Href}>Telefone: {Number.Text}</a>
-            <a href={WhatsApp.Href}>WhatsApp: {WhatsApp.Text}</a>
-            <a href={Mail.Href}>Email: {Mail.Text}</a>
+            <a href={ContactMain.Number.Href}>Telefone: {ContactMain.Number.Text}</a>
+            <a href={ContactMain.WhatsApp.Href}>WhatsApp: {ContactMain.WhatsApp.Text}</a>
+            <a href={ContactMain.Mail.Href}>Email: {ContactMain.Mail.Text}</a>
+
+            <Form />
         </ContactContainer >
     )
 }

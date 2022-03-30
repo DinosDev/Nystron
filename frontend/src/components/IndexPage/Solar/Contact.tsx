@@ -1,4 +1,4 @@
-import { Number, Mail } from "./ContactSolar.json"
+import ContactSolar from "./ContactSolar.js"
 import styled from "styled-components"
 
 const ContactContainer = styled.div`
@@ -10,8 +10,8 @@ const ContactContainer = styled.div`
 export default function Contact() {
     return (
         <ContactContainer>
-            <a href={Number.Href}>Telefone: {Number.Text}</a>
-            <a href={Mail.Href}>Email: {Mail.Text}</a>
+            <a href={ContactSolar.Number.Href}>Telefone: {ContactSolar.Number.Text}</a>
+            <a href={ContactSolar.Mail.Href}>Email: {ContactSolar.Mail.Text}</a>
         </ContactContainer >
     )
 }
