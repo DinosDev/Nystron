@@ -1,4 +1,4 @@
-export default {
+export default ContactData = {
     "Number": {
         "Href": "tel: +(55) 3423 1717",
         "Text": "(55) 3423 - 1717"

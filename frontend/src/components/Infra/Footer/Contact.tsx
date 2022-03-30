@@ -1,4 +1,4 @@
-import Json from "../../IndexPage/Contact/Contact.js"
+import ContactData from "../../IndexPage/Contact/ContactData"
 import styled from "styled-components";
 
 const ContactContainer = styled.div``
@@ -7,9 +7,9 @@ export default function Contact() {
     return (
         <ContactContainer>
             <h4>Contato</h4>
-            <a href={Json.Number.Href}>Telefone: {Json.Number.Text}</a>
+            <a href={ContactData.Number.Href}>Telefone: {ContactData.Number.Text}</a>
             <br />
-            <a href={Json.Mail.Href}>Email: {Json.Mail.Text}</a>
+            <a href={ContactData.Mail.Href}>Email: {ContactData.Mail.Text}</a>
             <br /> <br />
             <a href="https://goo.gl/maps/iZxmMg9vYewnso4y5" target="_blank">
                 R. João Batista de Castilhos, 140
