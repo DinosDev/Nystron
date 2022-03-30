@@ -1,3 +1,5 @@
+import ValidateInputs from "./ValidateInputs"
+
 export default async function SendRequest(event: any) {
   event.preventDefault()
 
@@ -9,13 +11,25 @@ export default async function SendRequest(event: any) {
     message: event.target.message.value,
   }
 
-  const API_URL = "http://localhost:8000/"
+  const Validation = ValidateInputs(values)
 
-  const res = await fetch(`${API_URL}api/v1/message`, {
-    body: JSON.stringify(values),
-    headers: { 'Content-Type': 'application/json' },
-    method: 'POST'
-  })
+  if (Validation === true) {
+    const API_URL = "http://localhost:8000/"
 
-  const result = await res.json()
+    const res = await fetch(`${API_URL}api/v1/message`, {
+      body: JSON.stringify(values),
+      headers: { 'Content-Type': 'application/json' },
+      method: 'POST'
+    })
+
+    const result = await res.json()
+
+    if (result.Type === "Success") {
+      alert("Mensagem Enviada com Sucesso!")
+    } else {
+      alert("Sua Mensagem não pode ser enviada, tente novamente mais tarde!")
+    }
+  } else {
+    alert(Validation)
+  }
 }
