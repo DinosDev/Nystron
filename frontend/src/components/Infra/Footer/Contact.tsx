@@ -1,4 +1,4 @@
-import Json from "../../IndexPage/Contact/ContactData"
+import Json from "../../IndexPage/Contact/Contact.js"
 import styled from "styled-components";
 
 const ContactContainer = styled.div``
