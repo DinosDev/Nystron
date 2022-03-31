@@ -1,4 +1,4 @@
-export default ContactData = {
+const ContactData = {
     "Number": {
         "Href": "tel: +(55) 3423 1717",
         "Text": "(55) 3423 - 1717"
@@ -12,3 +12,5 @@ export default ContactData = {
         "Text": "contato@nystron.com"
     }
 };
+
+export default ContactData
