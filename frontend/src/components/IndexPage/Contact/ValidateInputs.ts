@@ -2,8 +2,8 @@ const Errors = [
     {
         Title: "Name",
         Text: {
-            MinLength: "O Nome precisa de no mínimo 3 caracteres",
-            MaxLength: "O Nome precisa de no máximo 50 caracteres"
+            MinLength: "O Nome - Mínimo 3 caracteres",
+            MaxLength: "O Nome - Máximo 50 caracteres"
         },
         Validation: {
             MinLength: 3,
@@ -12,8 +12,8 @@ const Errors = [
     }, {
         Title: "LastName",
         Text: {
-            MinLength: "O Sobrenome precisa de no mínimo 5 caracteres",
-            MaxLength: "O Sobrenome precisa de no máximo 100 caracteres"
+            MinLength: "O Sobrenome - Mínimo 5 caracteres",
+            MaxLength: "O Sobrenome - Máximo 100 caracteres"
         },
         Validation: {
             MinLength: 5,
@@ -22,9 +22,9 @@ const Errors = [
     }, {
         Title: "Telephone",
         Text: {
-            MinLength: "O Telefone deve manter os seguintes formatos: +xx (xx) xxxxx - xxxx ou +xxx xxxxx - xxxx",
-            MaxLength: "O Telefone deve manter os seguintes formatos: +xx (xx) xxxxx - xxxx ou +xxx xxxxx - xxxx",
-            Format: "O Telefone deve manter os seguintes formatos: +xx (xx) xxxxx - xxxx ou +xxx xxxxx - xxxx"
+            MinLength: "O Telefone deve manter os seguintes formatos: +55 (55) xxxxx - xxxx ou +598 xxxxx - xxxx",
+            MaxLength: "O Telefone deve manter os seguintes formatos: +55 (55) xxxxx - xxxx ou +598 xxxxx - xxxx",
+            Format: "O Telefone deve manter os seguintes formatos: +55 (55) xxxxx - xxxx ou +598 xxxxx - xxxx"
         },
         Validation: {
             MinLength: 17,
@@ -34,8 +34,8 @@ const Errors = [
     }, {
         Title: "Email",
         Text: {
-            MinLength: "O Email precisa de no mínimo 3 caracteres",
-            MaxLength: "O Email precisa de no máximo 100 caracteres"
+            MinLength: "O Email - Mínimo 3 caracteres",
+            MaxLength: "O Email - Máximo 100 caracteres"
         },
         Validation: {
             MinLength: 3,
@@ -44,8 +44,8 @@ const Errors = [
     }, {
         Title: "Message",
         Text: {
-            MinLength: "A Mensagem precisa de no mínimo 3 caracteres",
-            MaxLength: "A Mensagem precisa de no máximo 1000 caracteres"
+            MinLength: "A Mensagem - Mínimo 3 caracteres",
+            MaxLength: "A Mensagem - Máximo 1000 caracteres"
         },
         Validation: {
             MinLength: 3,
