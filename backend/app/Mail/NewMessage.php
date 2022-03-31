@@ -34,7 +34,7 @@ class NewMessage extends Mailable
 
     static public function SendMail($Values)
     {
-        $Mails = ["bilhalba", "erick"];
+        $Mails = ["Bilhalba", "Erick"];
 
         foreach ($Mails as $Value) {
             $Mail = new NewMessage(
@@ -47,9 +47,14 @@ class NewMessage extends Mailable
 
             $Mail->subject("Nova Mensagem");
 
-            $MaiAddress = $Value . "@bilhalba.com.br";
+            $MaiAddress = strtolower($Values) . "@bilhalba.com.br";
 
-            return Mail::to($MaiAddress)->send($Mail);
+            $User = (object)[
+                "email" => $MaiAddress,
+                "name" => $Value
+            ];
+
+            return Mail::to($User)->send($Mail);
         }
     }
 
