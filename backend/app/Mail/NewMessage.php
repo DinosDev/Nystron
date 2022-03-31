@@ -34,22 +34,23 @@ class NewMessage extends Mailable
 
     static public function SendMail($Values)
     {
-        $Mail = new NewMessage(
-            $Values["name"],
-            $Values["lastName"],
-            $Values["telephone"],
-            $Values["email"],
-            $Values["message"],
-        );
+        $Mails = ["bilhalba", "erick"];
 
-        $Mail->subject("Nova Mensagem");
+        foreach ($Mails as $Value) {
+            $Mail = new NewMessage(
+                $Values["name"],
+                $Values["lastName"],
+                $Values["telephone"],
+                $Values["email"],
+                $Values["message"],
+            );
 
-        $User = (object)[
-            "email" => $Values["email"],
-            "name" => $Values["name"]
-        ];
+            $Mail->subject("Nova Mensagem");
 
-        return Mail::to($User)->send($Mail);
+            $MaiAddress = $Value . "@bilhalba.com.br";
+
+            return Mail::to($MaiAddress)->send($Mail);
+        }
     }
 
     /**
