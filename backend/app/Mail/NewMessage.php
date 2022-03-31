@@ -47,7 +47,7 @@ class NewMessage extends Mailable
 
             $Mail->subject("Nova Mensagem");
 
-            $MaiAddress = strtolower($Values) . "@bilhalba.com.br";
+            $MaiAddress = strtolower($Value) . "@bilhalba.com.br";
 
             $User = (object)[
                 "email" => $MaiAddress,
