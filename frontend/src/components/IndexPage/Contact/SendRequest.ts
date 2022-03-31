@@ -26,6 +26,8 @@ export default async function SendRequest(event: any) {
 
     if (result.Type === "Success") {
       alert("Mensagem Enviada com Sucesso!")
+    } else if (result["Status Code"] === "400") {
+      alert(result.Message)
     } else {
       alert("Sua Mensagem não pode ser enviada, tente novamente mais tarde!")
     }
