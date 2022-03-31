@@ -54,8 +54,13 @@ class NewMessage extends Mailable
                 "name" => $Value
             ];
 
-            return Mail::to($User)->send($Mail);
+            $MailResponse = Mail::to($User)->send($Mail);
+
+            if ($MailResponse !== NULL) return false;
+            else continue;
         }
+
+        return true;
     }
 
     /**

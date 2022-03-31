@@ -14,7 +14,7 @@ class MessageController extends Controller
 
         $Mail = NewMessage::SendMail($RequestValues);
 
-        if ($Mail !== NULL) {
+        if ($Mail === false) {
             return response()->json([
                 "Status Code" => "500",
                 "Type" => "Error",
