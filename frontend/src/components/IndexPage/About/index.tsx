@@ -15,11 +15,11 @@ const AboutContainer = styled.div`
 
 `
 
-export default function About() {
+export default function About(props: any) {
     return (
         <AboutContainer id="Sobre">
             <Image />
-            <Content />
+            <Content {...props} />
         </AboutContainer>
     )
 }

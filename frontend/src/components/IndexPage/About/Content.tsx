@@ -12,12 +12,14 @@ const ContentContainer = styled.div`
 
 const Text = styled.p``
 
-export default function Content() {
+export default function Content(props: any) {
+    const age = props.age
+
     return (
         <ContentContainer>
             <MiniTitle />
             <Text>
-                A Madeireira Nystron foi fundada em 29 de dezembro de 1978 pelo empresário Jaime Canuto Nystron. Nestes mais de 40 anos, a Nystron tornou-se uma das maiores empresas de materiais de construção da região oeste do Rio Grande Do Sul.
+                A Madeireira Nystron foi fundada em 29 de dezembro de 1978 pelo empresário Jaime Canuto Nystron. Nestes mais de {age} anos, a Nystron tornou-se uma das maiores empresas de materiais de construção da região oeste do Rio Grande Do Sul.
                 <br />
                 Por último, a Nystron vem abrindo áreas como a divisão Nystron Solar, que fornece e instala soluções de eficiência energética com geração solar Ongrid e Offgrid.
             </Text>
