@@ -1,7 +1,6 @@
 import ContactData from "./ContactData"
 import styled from "styled-components"
 import Title from "../../Infra/Title"
-import Form from "./Form"
 
 const ContactContainer = styled.div`
     text-align: center;
