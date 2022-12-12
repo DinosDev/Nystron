@@ -22,7 +22,7 @@ export default function Contact() {
         <ContactContainer id="Contato">
             <Title>Contato</Title>
 
-            <p>Você pode Entrar em Contato Com A Nossa Equipe Por Telefone, Email Ou Preencha O Formulário Abaixo.</p>
+            <p>Você pode Entrar em Contato Com A Nossa Equipe Por Telefone ou Email</p>
             <a href={ContactData.Number.Href}>Telefone: {ContactData.Number.Text}</a>
             <a href={ContactData.WhatsApp.Href}>WhatsApp: {ContactData.WhatsApp.Text}</a>
             <a href={ContactData.Mail.Href}>Email: {ContactData.Mail.Text}</a>
