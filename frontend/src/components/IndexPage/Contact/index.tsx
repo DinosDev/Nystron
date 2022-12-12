@@ -27,8 +27,6 @@ export default function Contact() {
             <a href={ContactData.Number.Href}>Telefone: {ContactData.Number.Text}</a>
             <a href={ContactData.WhatsApp.Href}>WhatsApp: {ContactData.WhatsApp.Text}</a>
             <a href={ContactData.Mail.Href}>Email: {ContactData.Mail.Text}</a>
-
-            <Form />
         </ContactContainer >
     )
 }
