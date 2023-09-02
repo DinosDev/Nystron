@@ -24,8 +24,8 @@ export default function Text() {
             <p>Gere sua própria energia renovável e limpa.</p>
             <p>Invista em Geração Solar!</p>
             <p>Instale com a Nystron Solar</p>
-            <p>Página da Nystron Solar em Breve!</p>
             <p>Faça seu orçamento!</p>
+            <a href="https://solar.nystron.com">Acesse o site da Nystron Solar!</a>
             <Contact />
         </TextContainer>
     )
