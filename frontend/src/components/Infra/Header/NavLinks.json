@@ -10,5 +10,9 @@
     {
         "Name": "Contato",
         "Href": "/#Contato"
+    },
+    {
+        "Name": "Nystron Solar",
+        "Href": "https://solar.nystron.com"
     }
 ]
